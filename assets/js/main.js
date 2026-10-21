@@ -100,7 +100,8 @@
 
 				$('#two').poptrox({
 					caption: function($a) { return $a.next('h3').text(); },
-					overlayColor: '#2c2c2c',
+					//overlayColor: '#2c2c2c',
+					overlayColor: '#000000',
 					overlayOpacity: 0.85,
 					popupCloserText: '',
 					popupLoaderText: '',
@@ -109,7 +110,11 @@
 					usePopupDefaultStyling: false,
 					usePopupEasyClose: false,
 					usePopupNav: true,
-					windowMargin: (breakpoints.active('<=small') ? 0 : 50)
+
+					//popupWidth: 1120,
+    				//popupHeight: 630,
+
+					windowMargin: (breakpoints.active('<=small') ? 0 : 30)
 				});
 
 			});
