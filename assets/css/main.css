@@ -2087,10 +2087,10 @@ input, select, textarea {
 
 				background-color: rgba(18, 18, 18, 1);*/
 
-				background-color: #3fa689;
-				border: solid 3px #3fa689;
-				/*background-color: #901bab;
-				border: solid 3px #901bab;*/
+				/* background-color: #3fa689; */
+				/* border: solid 3px #3fa689; */
+				background-color: #901bab;
+				border: solid 3px #901bab;
 
 				/*background-color: #901bab;
 				border: solid 3px #901bab;*/
@@ -2871,16 +2871,29 @@ input, select, textarea {
 
 		.poptrox-popup .caption {
 			background: #fff;
-			bottom: 0;
+			/* bottom: 0; */
 			cursor: default;
 			font-size: 1em;
-			height: 3em;
+			height: 36px;
 			left: 0;
-			line-height: 2.8em;
+			/* line-height: 2.8em; */
 			position: absolute;
+			line-height: 1.2em;
 			text-align: center;
 			width: 100%;
 			z-index: 1;
+			/* padding: 1em; */
+		}
+
+		.poptrox-popup .caption strong{
+			font-size: 1em;
+			color: black;
+		}
+
+		.poptrox-popup .caption small{
+			font-size: 0.8em;
+			color:black;
+			opacity: 60%;
 		}
 
 		.poptrox-popup .nav-next,
