@@ -540,7 +540,11 @@ input, select, textarea {
 					padding-top: 5em;
 				}
 
-		@media screen and (max-width: 1800px) {
+		@media screen and (max-width: 1560px) {
+
+			/* #header{
+				border: 1px solid red;
+			} */
 
 			.row {
 				display: flex;
@@ -3022,7 +3026,7 @@ input, select, textarea {
 
 	body.is-touch #header {
 		background-attachment: scroll;
-		background-size: auto, cover;
+		/* background-size: auto, cover; */
 	}
 
 	body.is-touch .poptrox-popup .nav-next,
@@ -3033,7 +3037,7 @@ input, select, textarea {
 
 /* XLarge */
 
-	@media screen and (max-width: 1800px) {
+	@media screen and (max-width: 1560px) {
 
 		/* Basic */
 
@@ -3050,7 +3054,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 3em 3em 3em 3em;
+				padding: 2em;
 				width: 30%;
 			}
 
@@ -3081,7 +3085,7 @@ input, select, textarea {
 			#main {
 				margin-left: 30%;
 				max-width: none;
-				padding: 6em 3em 3em 3em;
+				padding: 2em 3em 3em 3em;
 				width: calc(100% - 30%);
 			}
 
@@ -3106,16 +3110,28 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				background-attachment: scroll;
+				background-attachment: scroll, scroll;
 				background-position: top left, center center;
-				background-size: auto,		cover;
+				/* background-size: auto,		cover; */
+				background-repeat: repeat, repeat;
+				background-size: auto, 30%;
 				left: auto;
-				padding: 6em 4em;
+				padding: 2em;
 				position: relative;
 				text-align: center;
 				top: auto;
 				width: 100%;
 				display: block;
+			}
+
+			#header p{
+				color: white;
+				font-size: 1.1em;
+				line-height: 1.5em;
+				margin: 1em 0em 2em;
+				text-wrap: pretty;
+				/* font-size: 0.9em; */
+				font-weight:100;
 			}
 
 				#header h1 {
@@ -3163,7 +3179,7 @@ input, select, textarea {
 
 			#main {
 				margin: 0;
-				padding: 6em 4em;
+				padding: 2em 4em 4em 4em;
 				width: 100%;
 			}
 
