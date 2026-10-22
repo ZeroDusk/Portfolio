@@ -99,7 +99,15 @@
 			$window.on('load', function() {
 
 				$('#two').poptrox({
-					caption: function($a) { return $a.next('h3').text(); },
+					// caption: function($a) { return $a.next('h3').text(); },
+
+					caption: function($a) {
+						var $title = $a.next('h3');
+						var $skills = $title.next('h6');
+
+						return '<strong>' + $title.text() + '</strong><br />' +
+							'<small>' + $skills.text() + '</small>';
+					},
 					//overlayColor: '#2c2c2c',
 					overlayColor: '#000000',
 					overlayOpacity: 0.85,
